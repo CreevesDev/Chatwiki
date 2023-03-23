@@ -1,0 +1,40 @@
+\documentclass{article}
+    \usepackage{fullpage}
+    \usepackage{amsmath}
+    \usepackage{amssymb}
+    \usepackage[utf8]{inputenc}
+    \usepackage[T1]{fontenc}
+    \textheight=10in
+    \pagestyle{empty}
+    \raggedright
+\usepackage{graphicx} % Required for inserting images
+
+\begin{document}
+
+\vspace*{-10pt}
+\begin{center}
+	{\Huge \scshape {\VAR{protein_name}}}\\
+    \textit{This is AI generated data. Use literature to confirm 'facts'.}\\
+\end{center}
+
+
+\section{A brief summary}
+\VAR{openai_summary}\\
+\vspace{1mm}
+
+\section{Literature}
+%% for paper, authors in papers
+\VAR{paper} - \textit{\VAR{authors}}\\
+%% endfor
+\vspace{1mm}
+
+%% for topic, answer, topic_papers in topics_and_answers
+    \section{\VAR{topic}}
+    \VAR{answer}\\
+    \vspace{3mm}
+    %% for topic_paper, topic_authors in topic_papers
+        \textbf{\VAR{topic_paper}} - \textit{\VAR{topic_authors}}\\
+    %% endfor
+%% endfor
+
+\end{document}
