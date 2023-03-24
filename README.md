@@ -1,1 +1,1 @@
-ChatWiki
+Takes in a subject, as well as any number of subtopics, and generates a PDF formatted using LaTeX with information gathered from OpenAI and Google Scholar, with plans to add more information sources. 
