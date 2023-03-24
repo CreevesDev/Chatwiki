@@ -1,1 +1,0 @@
-secret = "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"
